@@ -19,38 +19,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use(methodOverride('_method'))
 
-// // routes
-// app.use(causeController)
-// first route! home route
-app.get('/', (req,res) => {
-    // res.send('home route finally')
-    console.log('home route!')
-    res.render('index', {name: 'Kirsten', color: 'glitter'})
-})
-// causes route
-app.get('/causes', (req,res) => {
-    console.log('causes route!')
-    res.render('causes', {})
-})
-// restaurants route
-app.get('/restaurants', (req,res) => {
-    console.log('restaurants route!')
-    res.render('restaurants', {})
-})
-// locations route
-app.get('/locations', (req,res) => {
-    console.log('locations route!')
-    res.render('locations', {})
-})
-// suggested causes get route
-app.get('/suggestedcauses', (req, res) => {
-    console.log('suggested causes route!')
-    res.render('suggested-causes', {})
-})
-// suggested causes post route
-app.post('/suggestedcauses', (req, res) => {
-    console.log('can we post!?')
-    res.render('suggested-causes', {})
-})
+//  routes
+app.use(causeController)
+
 // port 
 app.listen(3000, () => console.log("running circles on port 3000"))
