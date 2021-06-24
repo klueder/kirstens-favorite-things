@@ -1,10 +1,34 @@
-<h2>Causes That Have Been Suggested:</h2>
-<ul class = "newCauseList">
-    <% suggestedcauses.forEach(suggestedcause => {%> 
-    <li> <%= suggestedcause %> </li>
-    <% }) %>
-</ul>
+<html>
+    <head>
+        <title>Suggested Causes</title>
+    </head>
+    <body>
+        <h2>Causes That Have Been Suggested:</h2>
 
-<a href="/suggestedcauses/new" class="newCauseButton">Suggest a New Cause</a>
-</br>
-<a href="/" class="cancelButton">Cancel</a>
+        <% if( Array.isArray(suggestedcauses) ) { %>
+        <ul class = "newCauseList">
+            <% suggestedcauses.forEach(suggcause => {%> 
+                <b>
+                    <li> <%= suggcause.organization %> ; <%= suggcause.website %> ; <%= suggcause.cause %> ; <%= suggcause.founded %> ; <%= suggcause.location %> ; <%= suggcause.info %></li>
+                </b>
+                <% })} else { %>
+                <b>
+                Organization: <%= suggcause.organization %>
+                Wesbite: <%= suggcause.website %>
+                Cause: <%= suggcause.cause %>
+                Year Founded: <%= suggcause.founded %>
+                Location: <%= suggcause.location %>
+                Additional Info: <%= suggcause.info %>
+                </b>
+            <% }; %>
+            <!-- </ul> -->
+            
+            <a href="/suggestedcauses/new" class="newCauseButton">Suggest a New Cause</a>
+            </br>
+            <a href="/" class="cancelButton">Cancel</a>
+    </body>
+</html>
+
+
+
+

@@ -1,7 +1,7 @@
 const { mongo } = require('mongoose')
 const mongoose = require('../db/connection')
 
-const SuggestedCauseSchema = new mongoose.Schema(
+const suggestedCauseSchema = new mongoose.Schema(
     {
         organization: {
             type: String,
@@ -19,6 +19,6 @@ const SuggestedCauseSchema = new mongoose.Schema(
     {timestamps: true}
 )
 
-const SuggestedCause = mongoose.model('SuggestedCause', SuggestedCauseSchema)
+const SuggestedCause = mongoose.model('SuggestedCause', suggestedCauseSchema)
 
 module.exports = SuggestedCause
