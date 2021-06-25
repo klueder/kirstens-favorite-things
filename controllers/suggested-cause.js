@@ -70,4 +70,57 @@ function renderResult(res, suggcauses, msg) {
         console.log(err);}
 });}
 
+
+// my favorite things routes
+// causes
+router.get('/causes/aclu', (req, res) => {
+    console.log('aclu!')
+    res.render('../views/causes/aclu.ejs')
+})
+router.get('/causes/nami', (req, res) => {
+    console.log('nami!')
+    res.render('../views/causes/nami.ejs')
+})
+router.get('/causes/pp', (req, res) => {
+    console.log('pp!')
+    res.render('../views/causes/pp.ejs')
+})
+router.get('/causes/trevor', (req, res) => {
+    console.log('trevor!')
+    res.render('../views/causes/trevor.ejs')
+})
+router.get('/causes/wwf', (req, res) => {
+    console.log('wwf!')
+    res.render('../views/causes/wwf.ejs')
+})
+// locations
+router.get('/locations/captiva', (req, res) => {
+    console.log('captiva!')
+    res.render('../views/locations/captiva.ejs')
+})
+router.get('/locations/chicago', (req, res) => {
+    console.log('chicago!')
+    res.render('../views/locations/chicago.ejs')
+})
+router.get('/locations/keystone', (req, res) => {
+    console.log('keystone!')
+    res.render('../views/locations/keystone.ejs')
+})
+router.get('/locations/stlouis', (req, res) => {
+    console.log('st. louis!')
+    res.render('../views/locations/stlouis.ejs')
+})
+// restaurants
+router.get('/restaurants/tutu', (req, res) => {
+    console.log('tutu tango!')
+    res.render('../views/restaurants/tutu.ejs')
+})
+router.get('/restaurants/tavern', (req, res) => {
+    console.log('town tavern!')
+    res.render('../views/restaurants/tavern.ejs')
+})
+router.get('/restaurants/ale-house', (req, res) => {
+    console.log('mountain melt!')
+    res.render('../views/restaurants/ale-house.ejs')
+})
 module.exports = router

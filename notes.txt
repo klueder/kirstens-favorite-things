@@ -1,38 +1,38 @@
 MVP:
-A working full-stack application using Node.js, Mongoose, Express, and EJS
-Use MVC file structure: Models, Views, Controllers
-At least one model with all 7 RESTful routes and full CRUD (causes)
-A git repo not inside the class repo
-At least one Github commit per day of working on the project (aim for 15, but at least 10)
-Be deployed online and accessible to the public via Heroku
-A README.md file with explanations of the technologies used, approach taken, unsolved problems, and notes to self so I can come back to my project later in the course/after the course and be able to pick up my train of thought, continue to improve app, etc
-Inside README.md:
-User Stories
-Wireframes from planning stage
-Link to hosted working app
-As a user, I can view causes site host cares about and see information about each one
-As a user, I can view favorite restaurants of site host and see information about each one
-As a user, I can view favorite travel locations of site host and see information about each one
-As a user, I can view newly suggested causes and see information about each one
-As a user, I can suggest a new cause and provide information about it
-As a user, I can edit a newly suggested cause and the information provided about it
-As a user, I can delete a newly suggested cause and the information provided about it
+    [] A working full-stack application using Node.js, Mongoose, Express, and EJS
+    [] Use MVC file structure: Models, Views, Controllers
+    [] At least one model with all 7 RESTful routes and full CRUD (causes)
+    [X] A git repo not inside the class repo
+    [4] At least one Github commit per day of working on the project (aim for 15, but at least 10)
+    [] Be deployed online and accessible to the public via Heroku
+    [] A README.md file with explanations of the technologies used, approach taken, unsolved problems, and notes to self so I can come back to my project later in the course/after the course and be able to pick up my train of thought, continue to improve app, etc
+    [] Inside README.md:
+        [] User Stories
+        [] Wireframes from planning stage
+        [] Link to hosted working app
+    [] As a user, I can view causes site host cares about and see information about each one
+    [] As a user, I can view favorite restaurants of site host and see information about each one
+    [] As a user, I can view favorite travel locations of site host and see information about each one
+    [X] As a user, I can view newly suggested causes and see information about each one
+    [X] As a user, I can suggest a new cause and provide information about it
+    [] As a user, I can edit a newly suggested cause and the information provided about it
+    [] As a user, I can delete a newly suggested cause and the information provided about it
 
 Stretch:
-Two additional models with all 7 RESTful routes and full CRUD (restaurants and locations)
-Add a second model that is associated in some way (ex- 1-to-1, many-to-many, etc)
-Use EJS
-Include portfolio-quality styling
-Use a CSS framework like Skeleton, Bootstrap, Materialize, etc…
-Use a third party API
-Incorporate Google Maps for any of the three categories (causes, restaurants, travel)
-Enable real time communication with socket.io
-Add general About Me page
-As a user, I can view newly suggested restaurants and see information about each one
-As a user, I can view newly suggested travel locations and see information about each one
-As a user, I can suggest a new restaurant and provide information about it
-As a user, I can suggest a new travel location and provide information about it
-As a user, I can edit a newly suggested restaurant and the information provided about it
-As a user, I can edit a newly suggested travel location and the information provided about it
-As a user, I can delete a newly suggested restaurant and the information provided about it
-As a user, I can delete a newly suggested travel location and the information provided about it
+    [] Two additional models with all 7 RESTful routes and full CRUD (restaurants and locations)
+    [] Add a second model that is associated in some way (ex- 1-to-1, many-to-many, etc)
+    [X] Use EJS
+    [] Include portfolio-quality styling
+    [] Use a CSS framework like Skeleton, Bootstrap, Materialize, etc…
+    [] Use a third party API
+    [] Incorporate Google Maps for any of the three categories (causes, restaurants, travel)
+    [] Enable real time communication with socket.io
+    [] Add general About Me page
+    [] As a user, I can view newly suggested restaurants and see information about each one
+    [] As a user, I can view newly suggested travel locations and see information about each one
+    [] As a user, I can suggest a new restaurant and provide information about it
+    [] As a user, I can suggest a new travel location and provide information about it
+    [] As a user, I can edit a newly suggested restaurant and the information provided about it
+    [] As a user, I can edit a newly suggested travel location and the information provided about it
+    [] As a user, I can delete a newly suggested restaurant and the information provided about it
+    [] As a user, I can delete a newly suggested travel location and the information provided about it
