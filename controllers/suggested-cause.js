@@ -31,7 +31,7 @@ router.get('/suggestedcauses/new', (req, res) => {
     res.render('new-suggested-causes', {})
 })
 // create/post route for suggested causes, except hopefully this one works
-router.post('/suggestedcauses', (req, res) => {
+router.post('/allsuggestedcauses', (req, res) => {
     new SuggestedCause ({
         organization : req.body.Organization,
         website : req.body.Website,
