@@ -1,2 +1,27 @@
-
+[
+    {
+       "organization":"Equal Justice Initiative",
+       "website":"eji.org",
+       "cause":"Committed to ending mass incarceration and excessive punishment in the United States",
+       "founded": 1989,
+       "location": "Montgomery, AL",
+       "info": "all the info!"
+    },
+    {
+        "organization":"Thurgood Marshall College",
+        "website":"tmcf.org",
+        "cause":"To ensure student success by promoting educational excellence and preparing the next generation of workforce talent through leadership development",
+        "founded": 1987,
+        "location": "Washington, DC",
+        "info": "Provides scholarships, capacity building and programmatic support, and advocacy for students and public Historically Black Colleges and Universities (HBCUs)."
+     },
+     {
+        "organization":"National Foundation for Infectious Disease",
+        "website":"nfid.org",
+        "cause":"Healthier lives through effective prevention and treatment of infectious diseases",
+        "founded": 1973,
+        "location": "Bethesda, MD",
+        "info": "Founded in 1973, the National Foundation for Infectious Diseases (NFID) is dedicated to educating the public and healthcare professionals about the burden, causes, prevention, diagnosis, and treatment of infectious diseases across the lifespan. Core values include collaboration, diversity and inclusion, evidence-based, integrity, and transparency."
+     }
+  ]
   
