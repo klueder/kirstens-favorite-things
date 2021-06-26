@@ -41,35 +41,78 @@ router.post('/suggestedcauses', (req, res) => {
         info : req.body.Info
     }).save((err,suggcause) => {
         if(err) res.json(err);
-        else res.send("New Cause has been suggested!")
+        else res.redirect('/allsuggestedcauses')
     })
 })
-// list of suggested causes get route
-// router.get('/allsuggestedcauses', (req, res) => {
-//     SuggestedCause.find({}, (err, suggcauses)) {
-//         console.log("\nSuggestedCauses !")
-//         console.log(suggcauses)
-//         renderResult(res, suggcauses, "Suggested Causes List : ")
-//     })
-//     console.log('suggested causes route!')
-//     res.send("not where we wanted to be")
-// }
-
+// list of all suggested causes
 router.get('/allsuggestedcauses', (req,res) => {
     SuggestedCause.find({}, (err, suggcauses) => {
     console.log("\nSuggestedCauses !");
     console.log(suggcauses); 
     renderResult(res, suggcauses, "Suggested Causes :");
 });});
-
 function renderResult(res, suggcauses, msg) {
   res.render('suggested-causes', {message:msg, suggestedcauses:suggcauses},
     function(err, result) {
       if (!err) {res.end(result);}
-      else {res.end('Oops ! An error occurred.');
+      else {res.send('Oops ! An error occurred.');
         console.log(err);}
 });}
+// one suggested cause by id
+router.get('/allsuggestedcauses/:id', (req, res) => {
+    const routeId = req.params.id
+    SuggestedCause.findById(routeId)
+    .then (suggcause => {
+        res.render('one-sugg-cause', {suggcause})
+    })
+    .catch(err => {
+        console.log(`error during lookup of ID: ${routeId}`)
+        res.send("whoops nothing here")
+    })
+})
+// update suggested cause route
+router.get('/allsuggestedcauses/:id/edit', (req, res) => {
+    console.log('edit time!')
+    const routeId = req.params.id
+    SuggestedCause.findById(routeId)
+        .then(suggcause => {
+            console.log(suggcause)
+            res.render('edit-sugg-cause', {suggcause})
+        })
+})
+// updated suggested cause
+router.put('/allsuggestedcauses/:id', (req, res) => {
+    console.log('edited cause!')
+    const routeId = req.params.id
+    SuggestedCause.findOneAndUpdate(
+        {_id: routeId},
+        {
+            organization: req.body.organization,
+            website: req.body.website,
+            cause: req.body.cause,
+            founded: req.body.founded,
+            location: req.body.location,
+            info: req.body.info
+        },
+        {new: true},
+    )
+        .then(() => {
+            res.redirect('/allsuggestedcauses')
+        })
+})
 
+// delete suggested cause route
+router.delete('/allsuggestedcauses/:id', (req, res) => {
+    console.log('delete!')
+    const routeId = req.params.id
+    SuggestedCause.findByIdAndDelete(
+        {_id: routeId}
+    )
+    .then( result => {
+        console.log(result)
+        res.redirect('/allsuggestedcauses')
+    })
+})
 
 // my favorite things routes
 // causes

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Suggested Causes</title>
+    </head>
+    <body>
+    <div>
+        <h2> <%= suggcause.organization %> </h2>
+        <ul>
+            <li>Website: <%= suggcause.website %> </li>
+            <li>Cause: <%= suggcause.cause %> </li>
+            <li>Year Founded: <%= suggcause.founded %> </li>
+            <li>Location: <%= suggcause.location %> </li>
+            <li>Additional Information: <%= suggcause.info %> </li>
+        </ul>
+                                
+            <a href="/allsuggestedcauses/<%-suggcause.id%>/edit" >Edit This Cause</a> <br>
+            <form action='/allsuggestedcauses/<%-suggcause.id%>/?_method=DELETE' method='post'>
+                <input type='submit' value='Delete' class='deleteButton'/>
+            </form>
+            <a href="/allsuggestedcauses">Back</a>
+    </div>
+    </body>
+</html>

@@ -3,7 +3,7 @@ MVP:
     [] Use MVC file structure: Models, Views, Controllers
     [] At least one model with all 7 RESTful routes and full CRUD (causes)
     [X] A git repo not inside the class repo
-    [4] At least one Github commit per day of working on the project (aim for 15, but at least 10)
+    [5] At least one Github commit per day of working on the project (aim for 15, but at least 10)
     [] Be deployed online and accessible to the public via Heroku
     [] A README.md file with explanations of the technologies used, approach taken, unsolved problems, and notes to self so I can come back to my project later in the course/after the course and be able to pick up my train of thought, continue to improve app, etc
     [] Inside README.md:

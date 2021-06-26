@@ -9,7 +9,7 @@
         <ul class = "newCauseList">
             <% suggestedcauses.forEach(suggcause => {%> 
                 <b>
-                    <li> <%= suggcause.organization %> ; <%= suggcause.website %> ; <%= suggcause.cause %> ; <%= suggcause.founded %> ; <%= suggcause.location %> ; <%= suggcause.info %></li>
+                <li> <%= suggcause.organization %> ; <%= suggcause.website %> ; <%= suggcause.cause %> ; <%= suggcause.founded %> ; <%= suggcause.location %> ; <%= suggcause.info %> <a href='/allsuggestedcauses/<%-suggcause.id%>'>View this Cause</a></li>
                 </b>
                 <% })} else { %>
                 <b>

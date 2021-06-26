@@ -1,0 +1,24 @@
+<body>
+    <div>
+        <h2>Edit Suggested Cause</h2>
+        <h4> <%=suggcause.organization%> </h4>
+        <form action='/allsuggestedcauses/<%-suggcause.id %>/?_method=put' method='POST'>
+        <div class='edit-form'>
+            <label for="organization">Organization*:</label>
+            <input type="text" name="organization" class="formInputs" value="<%-suggcause.organization %>"/> <br>
+            <label for="website">Website:</label>
+            <input type="text" name="website" class="formInputs" value="<%-suggcause.website %>"/> <br>
+            <label for="cause">Cause:</label>
+            <input type="text" name="cause" class="formInputs" value="<%-suggcause.cause %>"/> <br>
+            <label for="founded">Year Founded:</label>
+            <input type="number" name="founded" class="formInputs" value="<%-suggcause.founded %>"/> <br>
+            <label for="location">Location:</label>
+            <input type="text" name="location" class="formInputs" value="<%-suggcause.location %>"/> <br>
+            <label for="info">Additional Information:</label>
+            <input type="text" name="info" class="formInputs" value="<%-suggcause.info %>"/> <br>
+        </div>
+        <input type="submit" class="submitButton" />
+        <a href='/allsuggestedcauses'>Cancel</a>
+        </form>
+    </div>
+</body>
