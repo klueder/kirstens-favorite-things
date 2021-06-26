@@ -1,7 +1,8 @@
 body {
-    background-color: navy;
-    color: white;
+    font-family: 'Nunito', sans-serif;
+    background-color: honeydew;
+    color: navy;
 }
 h1 {
-    color: hotpink;
+    color: deeppink;
 }
