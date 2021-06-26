@@ -20,9 +20,10 @@ app.use(express.json());
 //  adds it to the request object as request.body
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
+app.set("port", process.env.PORT || 3000)
 
 //  routes
 app.use(causeController)
 
 // port 
-app.listen(3000, () => console.log("running circles on port 3000"))
+app.listen(app.get("port"), () => console.log(`running circles on port ${app.get("port")}`))

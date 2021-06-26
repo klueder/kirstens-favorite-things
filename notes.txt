@@ -3,7 +3,7 @@ MVP:
     [X] Use MVC file structure: Models, Views, Controllers
     [] At least one model with all 7 RESTful routes and full CRUD (causes)
     [X] A git repo not inside the class repo
-    [6] At least one Github commit per day of working on the project (aim for 15, but at least 10)
+    [8] At least one Github commit per day of working on the project (aim for 15, but at least 10)
     [] Be deployed online and accessible to the public via Heroku
     [] A README.md that includes:
         [] Explanations of technologies used
@@ -56,3 +56,10 @@ Still Need To:
     [] Deploy 
         [] Heroku
         [] AtlasDB
+
+
+Passwords:
+admin: D2mgIkvwC1Nblahl
+klueder: SYzTe699X789vuH4
+
+heroku config:set DB_URL="mongodb+srv://klueder:SYzTe699X789vuH4@cluster0.5fihl.mongodb.net/kirstens-favorite-things?retryWrites=true&w=majority"
