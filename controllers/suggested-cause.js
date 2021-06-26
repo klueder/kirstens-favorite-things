@@ -26,7 +26,7 @@ router.get('/locations', (req,res) => {
     res.render('locations', {})
 })
 // form for new suggested causes get route
-router.get('/suggestedcauses/new', (req, res) => {
+router.get('/allsuggestedcauses/new', (req, res) => {
     console.log('new suggested cause route!')
     res.render('new-suggested-causes', {})
 })
@@ -49,12 +49,13 @@ router.get('/allsuggestedcauses', (req,res) => {
     SuggestedCause.find({}, (err, suggcauses) => {
     console.log("\nSuggestedCauses !");
     console.log(suggcauses); 
+    // res.render('suggested-causes', {})
     renderResult(res, suggcauses, "Suggested Causes :");
 });});
 function renderResult(res, suggcauses, msg) {
   res.render('suggested-causes', {message:msg, suggestedcauses:suggcauses},
     function(err, result) {
-      if (!err) {res.end(result);}
+      if (!err) {res.send(result);}
       else {res.send('Oops ! An error occurred.');
         console.log(err);}
 });}
