@@ -10,12 +10,13 @@ I built this with HTML, CSS, JavaScript, node, ejs, and mongoDB. I started with 
 ___
 ### Technologies Used
 
--HTML
--CSS
--JavaScript
--node
--mongoDB
--ejs
+- HTML
+- CSS
+- JavaScript
+- node
+- mongoose
+- mongoDB
+- ejs
 ____
 ### Wireframes
 ___

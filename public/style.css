@@ -5,9 +5,17 @@ body {
 }
 h1 {
     color: deeppink;
+    text-align: center;
 }
 h2 {
     color: deeppink;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+.footerList {
+    padding: 0 5px 0 5px;
 }
 .cardinals {
     color: red;
