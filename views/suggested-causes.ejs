@@ -9,7 +9,13 @@
         <ul class = "newCauseList">
             <% suggestedcauses.forEach(suggcause => {%> 
                 <b>
-                <li> <%= suggcause.organization %> ; <%= suggcause.website %> ; <%= suggcause.cause %> ; <%= suggcause.founded %> ; <%= suggcause.location %> ; <%= suggcause.info %> <a href='/allsuggestedcauses/<%-suggcause.id%>'>View this Cause</a></li>
+                <li>Organization: <%= suggcause.organization %><br>
+                    Website: <%= suggcause.website %> <br>
+                    Cause: <%= suggcause.cause %><br>
+                    Year Founded: <%= suggcause.founded %><br>
+                    Location: <%= suggcause.location %><br>
+                    Additional Info: <%= suggcause.info %><br>
+                    <a href='/allsuggestedcauses/<%-suggcause.id%>'>View this Cause</a></li><br>
                 </b>
                 <% })} else { %>
                 <b>
@@ -25,7 +31,7 @@
             
             <a href="/allsuggestedcauses/new" class="newCauseButton">Suggest a New Cause</a>
             </br>
-            <a href="/" class="cancelButton">Cancel</a>
+            <a href="/">Back</a>
     </body>
 </html>
 

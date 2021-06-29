@@ -6,3 +6,17 @@ body {
 h1 {
     color: deeppink;
 }
+h2 {
+    color: deeppink;
+}
+.cardinals {
+    color: red;
+    font-weight: bold;
+}
+.blues {
+    color: blue;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}

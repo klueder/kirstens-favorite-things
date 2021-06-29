@@ -167,4 +167,8 @@ router.get('/restaurants/ale-house', (req, res) => {
     console.log('mountain melt!')
     res.render('../views/restaurants/ale-house.ejs')
 })
+router.get('/restaurants/ski-tip', (req, res) => {
+    console.log('ski tip!')
+    res.render('../views/restaurants/ski-tip.ejs')
+})
 module.exports = router

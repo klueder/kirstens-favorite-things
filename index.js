@@ -9,7 +9,7 @@ const methodOverride = require('method-override')
 app.set('view engine', 'ejs')
 app.use(ejsLayouts)
 // set up static files (ex- images, css, anything we want public)
-app.use('/public', express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 // app.use(express.bodyParser())
 // app.use(express.methodOverride())
